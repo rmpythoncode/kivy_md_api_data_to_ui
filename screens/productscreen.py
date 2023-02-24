@@ -3,6 +3,9 @@ from kivy.network.urlrequest import UrlRequest
 import json
 from kivymd.uix.label import MDLabel
 from kivymd.uix.button import MDIconButton
+from kivy.uix.scrollview import ScrollView
+from kivymd.uix.card import MDCard
+from kivymd.uix.list import MDList, OneLineListItem
 
 class ProductScreen(MDScreen):
   url = "https://jsonplaceholder.typicode.com/users"
@@ -16,9 +19,15 @@ class ProductScreen(MDScreen):
     # print(req.result)
 
     def got_json(req, result):
-      data = result
-      for i in data:
-        self.ids.mdlabel_name.add_widget(MDLabel(text=(i['name'])))
+
+     
+
+       
+    
+        
+
+
+        # self.ids.mdlabel_name.add_widget(MDLabel(text=(i['name'])))
 
 
  
