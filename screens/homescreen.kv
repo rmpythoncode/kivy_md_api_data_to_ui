@@ -1,0 +1,57 @@
+<HomeScreen>:
+  name: "homescreen"
+  MDBoxLayout:
+    orientation: 'vertical'
+        
+    MDBoxLayout:
+      md_bg_color: 1, 0, 1, .5
+      size_hint_y: None
+      height: 40
+      MDLabel:
+        text: "text"
+        color: 1, 1, 1, 1
+        halign: "center"
+        font_size: 30
+        font_name: "assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf"
+        font_weigth: 700
+    MDBoxLayout:
+      MDBoxLayout:
+        md_bg_color: 1, 0, 1, .7
+        padding: 5
+        MDCard:
+          orientation: "vertical"
+          padding: "8dp"
+          pos_hint: {"center_x": .5, "center_y": .5}
+
+          MDLabel:
+            text: "Title"
+            theme_text_color: "Secondary"
+            size_hint_y: None
+            height: self.texture_size[1]
+
+          MDSeparator:
+            height: "2dp"
+          
+          MDIconButton:
+            size_hint: 1, 1
+            on_release: root.manager.current = "productscreen"
+            FitImage:
+              source: "assets/images/border.png"
+              radius: 10
+               
+      MDBoxLayout:
+        md_bg_color: 1, 0, 1, .9
+    MDBoxLayout:
+      MDBoxLayout:
+        md_bg_color: 1, 1, 0, .7
+      MDBoxLayout:
+        md_bg_color: 1, 1, 0, .9
+
+    MDBoxLayout:
+      md_bg_color: 0, 1, 0, .4
+      size_hint_y: None
+      height: 40
+      
+
+
+  
